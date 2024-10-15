@@ -7,30 +7,39 @@
   font-family: "Inter", sans-serif;
 
 }
+.main-container{
+    margin: 0 ;
+    background-image: url(icons/home1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
- background-color:transparent; 
- position: relative;
+ 
+
 }
 nav ul{
     display: flex;
     list-style: none;
 }
+
 nav{
     margin-left: 90px;
 }
 nav ul a{
-margin: 20px;
-transition: 0.5s;
+    margin: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
 }
 nav ul a:hover{
   scale: 1.7;
   color: rgb(132, 152, 221);
   cursor: pointer;
-
 }
 .button-navbar button{
     z-index: 999;  
@@ -62,6 +71,13 @@ nav ul a:hover{
     font-weight:bolder;
     font-size: 2.8rem;
 }
+.text .home-first-h{
+    padding-left: 50px;
+    margin-bottom: 40px;
+    font-weight:bolder;
+    font-size: 2.8rem;
+}
+
 .text .second-h{
     font-size: 2.4rem;
     font-weight:bolder; 
@@ -69,7 +85,6 @@ nav ul a:hover{
 .about-description{
     margin: 10px 0px;
     font-style: oblique;
-    font-weight:lighter;
     color: rgb(17, 19, 27);
     line-height: 29px;
 }
@@ -121,7 +136,6 @@ font-size: 2.4rem;
 }
 .section-2 .text p {
     max-width: 60%;
-    font-weight: lighter;
     color: rgb(0, 0, 0);
     font-style: initial;
     line-height: 29px;
@@ -151,7 +165,6 @@ padding-left: 150px;
 } 
 .section-3 .text .description {
     max-width: 90%;
-    font-weight: lighter;
     color: rgb(0, 0, 0);
     font-style: initial;
     line-height: 29px;
@@ -186,7 +199,6 @@ padding-left: 150px;
 }
 .section-4 .text .description{
     width: 60%;
-    font-weight: lighter;
     color: rgb(0, 0, 0);
     font-style: initial;
     line-height: 29px;
@@ -259,10 +271,6 @@ footer .social-media-icons ul li{
 }
 .home-section-1  img {
 height: 800px;
-position: absolute;
- top: 0;
- right: 0;
- z-index: -1;
 }
 .home-section-1 .text{
     margin: 163px;
@@ -300,12 +308,78 @@ transition: 1s;
     margin-left: 20px;
 }
 .home-section-1 .text .buttons .btn2:hover{
-    margin: 20px 0px;
+    background-color: #ffffff79;
     color: rgb(8, 8, 8);
-    line-height: 29px;
+    cursor: pointer;
+    font-size: 15px;
 }
 .home-section-1 .text .buttons .btn1:hover{
-    margin: 20px 0px;
-    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+    font-size: 15px;
+}
+.home-pricing{
+    background-image: url(icons/bg-curve.png);   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-container{
+    text-align: center;
+    margin-top: 100px;
+}
+.home-desc p{
+    margin: auto;
+    width: 40%;
+    align-self: flex-start;
+    font-style: oblique;
+    color: rgb(17, 19, 27);
     line-height: 29px;
 }
+.title-princing {
+    padding-left: 50px;
+    margin-bottom: 10px;
+    font-weight:bolder;
+    font-size: 2.5rem;
+}
+.price-tag .p1{
+    color: rgba(34, 47, 101, 1);
+    padding-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight:bolder;
+    font-size: 2.5rem;
+}
+.price-tag .p2{
+    color: rgba(34, 47, 101, 1);
+    padding-left: 45px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.extra-info p{
+    color: rgb(0, 0, 0);
+    padding-left: 45px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.button-price button{
+    background-color: rgba(17, 27, 71, 1);
+    color: aliceblue;
+    margin-top: 55px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;    
+    transition: 1s;
+    margin-left: 87px;
+}
+.button-price button:hover{
+    cursor: pointer;
+    background-color:  rgba(25, 36, 84, 0.902);
+    font-size: 15px;
+}
+
+
+

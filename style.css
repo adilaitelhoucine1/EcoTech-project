@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 
-  font-family: "Inter", sans-serif;
+ font-family: "Inter", sans-serif;
 
 }
 .main-container{
@@ -19,8 +19,6 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
- 
-
 }
 nav ul{
     display: flex;
@@ -380,6 +378,141 @@ transition: 1s;
     background-color:  rgba(25, 36, 84, 0.902);
     font-size: 15px;
 }
+/*Contact style start from here*/
+.contact-title{
+    padding-left: 50px;
+    margin-bottom: 10px;
+    font-weight:bolder;
+    font-size: 1.5rem;
+   
+}
+.contact-title h1{
+    margin: 30px;
+    text-align: center;
+}
+.contact-container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.176) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+}
+.contact-container .sidebar{
+    width: 40%;
+    background-color: rgba(242, 245, 255, 1);
+    border-radius: 10px;
+}
+ .sidebar-title{
 
+    padding-left: 40px;
+    padding-top: 50px;
+    font-weight:bolder;
+    font-size: 2.2rem;
+}
+.sidebar-subtitle{
+    padding-left: 50px;
+    margin: 15px;
+    font-weight:normal;
+    font-size: 1.1rem;
+}
+.personal-info{
+    margin-top: 100px;
+}
+.personal-info .email ,.personal-info .phone,.personal-info .localisation{
+display: flex;
+margin-left: 40px;
+}
+.personal-info .email,.personal-info .phone, .personal-info .localisation{
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+.personal-info p{
+    margin-left: 5px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.contact-form label{
+    color: rgb(132, 122, 122);
+    font-style: initial;
+    line-height: 20px;
+}
+.contact-form input{
+  border: none;
+  border-bottom: 2px solid rgb(183, 171, 171);
+  height: 30px;
+}
+.contact-form input:focus{
+  outline: none;
+}
 
+.first-name,.last-name{
+    margin-bottom: 50px;
+    margin-right: 60px;
+}
+.email, .phone{
+    margin-bottom: 50px;
+    margin-right: 60px;
+    margin-top: 40px;
+}
+.contact-area{
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(183, 171, 171);
+    margin-top: 10px;
+}
+.contact-btn button{
+    margin-top: 40px;
+    margin-left: 330px;
+    background-color: rgb(0, 0, 0);
+    width: 120px;
+    height: 50px;
+    color: beige;
+    border-radius: 10px;
+    box-shadow: 7px 5px 5px rgb(146, 140, 140);
+    transition: 0.5s;
+    font-size: 13px;
+}
+.contact-btn button:hover{
+    cursor: pointer;
+    background-color:  rgba(10, 11, 11, 0.902);
+    font-size: 14px;
+}
+/*Product style start from here*/
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: row;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 395px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 20px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
 
+.product-card img{
+    width: 100%;
+}
+.ptoduit-title{
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(44, 43, 43);
+    margin: 10px;
+    align-self: center;
+}
+.product-description{
+    margin: 10px;
+}
+.card-group{
+    display: flex;
+}

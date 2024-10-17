@@ -392,7 +392,7 @@ transition: 1s;
     display: flex;
     width: 80%;
     margin: auto;
-    box-shadow: rgba(50, 50, 93, 0.176) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; 
     border-radius: 10px;
 }
 .contact-container .sidebar{
@@ -581,3 +581,6 @@ margin-left: 40px;
   .sidebar-contact{
     background-color: #000;
   }
+.test{
+color: rgb(0, 0, 0);
+}

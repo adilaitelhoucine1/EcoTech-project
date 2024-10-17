@@ -78,7 +78,7 @@
         <div class="text-btn">
             <p>©2024 Elho Publishing</p>
             <button>Buy Now</button>
-            <button onclick="ToDarkMode()">Toggle dark mode</button>
+            <button onclick="testdark()">Toggle dark mode</button>
         </div>  
        <div class="hr">
         <hr>
@@ -108,5 +108,16 @@
         
        </footer>
 </body>
-<script src="script.js"></script>
+<script>
+    function testdark(){
+        document.body.classList.toggle("dark-mode");
+        var links=document.querySelectorAll("a");
+        var ftr=document.querySelector("footer");
+        var titlecard=document.querySelectorAll("h6");
+        var niba=document.querySelector(".sidebar");
+        niba.classList.toggle("test");
+        ftr.classList.toggle("footer-dark");
+        links.forEach((element) => element.classList.toggle("dark-header"));
+    }
+</script>
 </html>

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoTech</title>
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 </head>
 <body>
     <div class="main-container" style="padding-top: 10px;">
@@ -134,15 +138,26 @@
                  
                 <div class="social-media-icons">
                                 <ul>
-                                    <li><a><img src="icons/facebook.png"></a></li>
-                                    <li><a><img src="icons/linkden.png"></a></li>
-                                    <li><a><img src="icons/twitter.png"></a></li>
-                                    <li><a><img src="icons/youtube.png"></a></li>
-                                    <li><a><img src="icons/insta.png"></a></li>
+                                    <li><a href="#"><img src="icons/facebook.png"></a></li>
+                                    <li><a href="#"><img src="icons/linkden.png"></a></li>
+                                    <li><a href="#"><img src="icons/twitter.png"></a></li>
+                                    <li><a href="#"><img src="icons/youtube.png"></a></li>
+                                    <li><a href="#"><img src="icons/insta.png"></a></li>
                                 </ul>
                             </div>
             </div>
-            
+            <div id="myBtn">
+                <button onclick="topFunction()"  title="Go to top"><i class='fas fa-angle-double-up' id="scrool-icon" style='font-size:36px;margin: auto;'></i></button>
+                
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    <span class="ball"></span>
+                    </label>
+                </div>
+        </div> 
            </footer>
 </body>
 <script src="script.js"></script>

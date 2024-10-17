@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
      font-family: "Inter", sans-serif;
+     scroll-behavior: smooth;
 }
 .main-container{
     margin: 0 ;
@@ -13,7 +14,7 @@
     background-size: contain;
 }
 header{
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
@@ -564,15 +565,15 @@ margin-left: 40px;
   }
   /*Dark mode classes start from here*/
   .dark-mode {
-    background-color: #282626;
+    background-color: black;
     color: white;
   }
   .dark-header{
     color: #fff;
-    background-color: #282626; 
+    background-color: black;
  }
   .footer-dark{
-    background-color: #282626;
+    background-color: black;
     color: #fff;
   }
   .white-text{
@@ -584,3 +585,83 @@ margin-left: 40px;
 .test{
 color: rgb(0, 0, 0);
 }
+/*..........................*/
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fa-moon {color: #f1c40f;}
+  
+  .fa-sun {color: #f39c12;}
+  
+  .checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+/*scroll button*/
+  #myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn button{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+  }
+  #scrool-icon{
+    padding-bottom: 10px;
+  }
+  #scrool-icon:hover{
+   cursor: pointer;
+  }
+  #myBtn-dark{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  .scrol-dark{
+    color: #ffffff;
+  }

@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
      font-family: "Inter", sans-serif;
-
 }
 .main-container{
     margin: 0 ;
@@ -281,7 +280,7 @@ height: 800px;
 .home-section-1 .text p{
     max-width: 50%;
     margin: 20px 0px;
-    color: rgb(17, 19, 27);
+    color: rgb(0, 0, 0);
     line-height: 29px;
 }
 .home-section-1 .text .buttons .btn1{
@@ -563,20 +562,22 @@ margin-left: 40px;
   i{
     margin-right:10px;
   }
-  .done{
-    background:#be2edd;
-    position:absolute;
-    width:100%;
-    top:0;
-    left:0;
-    transition:transform 0.3s ease;
-  
-    transform:translate(-110%) skew(-40deg);
+  /*Dark mode classes start from here*/
+  .dark-mode {
+    background-color: #282626;
+    color: white;
   }
-  .posttext{
-    background:#be2edd;
+  .dark-header{
+    color: #fff;
+    background-color: #282626; 
+ }
+  .footer-dark{
+    background-color: #282626;
+    color: #fff;
   }
-  .fa-check{
-    background:#be2edd;
+  .white-text{
+    color: white !important;
   }
-  
+  .sidebar-contact{
+    background-color: #000;
+  }

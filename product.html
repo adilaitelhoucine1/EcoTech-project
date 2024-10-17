@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Produits</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">Nos Produits</a></li>
-                <li><a href="contact.html">Contactez-nous</a></li>
+                <li><a href="index.html" class="a1">Home</a></li>
+                <li><a href="about.html" class="a2">About</a></li>
+                <li><a href="product.html" class="a3">Nos Produits</a></li>
+                <li><a href="contact.html" class="a4">Contactez-nous</a></li>
             </ul>
         </nav>
         <div class="button-navbar">
-            <button>Buy Now</button>
+            <button class="header-btn">Buy Now</button>
         </div>
     </header>
     <section class="product-container">
@@ -31,11 +32,8 @@
                     <p class="product-description">Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. </p>
                     <button class="addtocart">
                         <div class="pretext">
+                          <i class="fa fa-shopping-cart" style="font-size:30px"></i>
                           <i class="fas fa-cart-plus"></i> ADD TO CART
-                        </div>
-                        
-                        <div class="pretext done">
-                          <div class="posttext"><i class="fas fa-check"></i> ADDED</div>
                         </div>
                         
                       </button>
@@ -50,12 +48,10 @@
                     <p class="product-description">Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. </p>
                     <button class="addtocart" id="test1">
                         <div class="pretext">
+                          <i class="fa fa-shopping-cart" style="font-size:30px"></i>
                           <i class="fas fa-cart-plus"></i> ADD TO CART
                         </div>
-                        
-                        <div class="pretext done" id="test2">
-                          <div class="posttext"><i class="fas fa-check"></i> ADDED</div>
-                        </div>
+ 
                         
                       </button>
              </div>
@@ -69,14 +65,10 @@
                     <p class="product-description">Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. </p>
                     <button class="addtocart">
                         <div class="pretext">
+                          <i class="fa fa-shopping-cart" style="font-size:30px"></i>
                           <i class="fas fa-cart-plus"></i> ADD TO CART
                         </div>
-                        
-                        <div class="pretext done">
-                          <div class="posttext"><i class="fas fa-check"></i> ADDED</div>
-                        </div>
-                        
-                      </button>
+                        </button>
                 </div>
         </div>  
         
@@ -90,12 +82,26 @@
                 <p class="product-description">Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. </p>
                 <button class="addtocart">
                     <div class="pretext">
+                      <i class="fa fa-shopping-cart" style="font-size:30px"></i>
                       <i class="fas fa-cart-plus"></i> ADD TO CART
                     </div>
-                    
-                    <div class="pretext done">
-                      <div class="posttext"><i class="fas fa-check"></i> ADDED</div>
+
+                  </button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="icons/produit1.png">
+                </div>
+                
+                <h6 class="ptoduit-title">Produit 1</h6>
+                <p class="product-description">Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. </p>
+                <button class="addtocart">
+                    <div class="pretext">
+                      <i class="fa fa-shopping-cart" style="font-size:30px"></i>
+                      <i class="fas fa-cart-plus"></i> ADD TO CART
                     </div>
+
                     
                   </button>
             </div>
@@ -109,55 +115,34 @@
                 <p class="product-description">Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. </p>
                 <button class="addtocart">
                     <div class="pretext">
+                      <i class="fa fa-shopping-cart" style="font-size:30px"></i>
                       <i class="fas fa-cart-plus"></i> ADD TO CART
                     </div>
-                    
-                    <div class="pretext done">
-                      <div class="posttext"><i class="fas fa-check"></i> ADDED</div>
-                    </div>
-                    
-                  </button>
-            </div>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="icons/produit1.png">
-                </div>
-                
-                <h6 class="ptoduit-title">Produit 1</h6>
-                <p class="product-description">Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. Healthy as could be. Easy to enjoy, easy to prepare. </p>
-                <button class="addtocart">
-                    <div class="pretext">
-                      <i class="fas fa-cart-plus"></i> ADD TO CART
-                    </div>
-                    
-                    <div class="pretext done">
-                      <div class="posttext"><i class="fas fa-check"></i> ADDED</div>
-                    </div>
-                    
                   </button>   
             </div>
     </div>        
     </section>
     
-    <footer style="margin-top:30px ;">
+    <footer style="margin-top:30px ;" class="footer"><hr>
         <div class="text-btn">
             <p>©2024 Elho Publishing</p>
             <button>Buy Now</button>
+            <button onclick="ToDarkMode()">Toggle dark mode</button>
         </div>  
        <div class="hr">
         <hr>
        </div> 
         <div class="navbar">
             <header>
-                <nav>
-                    <ul>
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Nos Produits</a></li>
-                        <li><a>Contactez-vous</a></li>
-                    </ul>
-                </nav>  
+              <nav>
+                <ul>
+                    <li><a href="index.html" class="a5">Home</a></li>
+                    <li><a href="about.html" class="a6">About</a></li>
+                    <li><a href="product.html" class="a7">Nos Produits</a></li>
+                    <li><a href="contact.html" class="a8">Contactez-nous</a></li>
+                </ul>
+            </nav>
             </header>
              
             <div class="social-media-icons">

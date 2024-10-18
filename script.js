@@ -10,16 +10,27 @@ function ToDarkMode(){
     var section4=document.querySelector(".section-4");
     ftr.classList.toggle("footer-dark");
     var sdbr=document.querySelector(".sidebar");
-    var btnscrool=document.querySelector("#scrool-icon");
+    var btnscrool=document.querySelectorAll("#scrool-icon");
+    var darkicon=document.querySelectorAll(".icon-dark-test");
+    
+    //console.log(darkicon);
 
     links.forEach((element) => element.classList.toggle("dark-header"));
     titlecard.forEach((element) => element.classList.toggle("dark-header")); 
     paragraphs.forEach((element) => element.classList.toggle("white-text"));
+    
+     if(document.body.classList.contains("dark-mode")){
+      darkicon.forEach((element) => element.src='/icons/testicon.png');
+     }else{
+      darkicon.forEach((element) => element.src='/icons/icon1.png');
+     }
+
     section2.classList.toggle("dark-header");
     section4.classList.toggle("dark-header");
     contacttitle.classList.replace("white-text"); 
     sdbr.classList.toggle("test");
     btnscrool.classList.toggle("scrol-dark");
+    //darkicon.src="icons\dark-icon.png";
 }
 const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {

@@ -316,7 +316,8 @@ transition: 1s;
     font-size: 15px;
 }
 .home-pricing{
-    background-image: url(icons/bg-curve.png);   
+    /* to fix the bg-curve issue in the dark mode
+    background-image: url(icons/bg-curve.png);*/   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -497,6 +498,7 @@ margin-left: 40px;
     border-radius: 20px;
     margin-right: 50px;
     flex-wrap: wrap;
+    
 }
 
 .product-card img{

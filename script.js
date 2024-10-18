@@ -20,9 +20,9 @@ function ToDarkMode(){
     paragraphs.forEach((element) => element.classList.toggle("white-text"));
     
      if(document.body.classList.contains("dark-mode")){
-      darkicon.forEach((element) => element.src='/icons/testicon.png');
+      darkicon.forEach((element) => element.src='icons/testicon.png');
      }else{
-      darkicon.forEach((element) => element.src='/icons/icon1.png');
+      darkicon.forEach((element) => element.src='icons/icon1.png');
      }
 
     section2.classList.toggle("dark-header");

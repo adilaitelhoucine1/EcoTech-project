@@ -9,7 +9,8 @@ function ToDarkMode(){
     var section2=document.querySelector(".section-2");
     var section4=document.querySelector(".section-4");
     ftr.classList.toggle("footer-dark");
-    var niba=document.querySelector(".sidebar");
+    var sdbr=document.querySelector(".sidebar");
+    var btnscrool=document.querySelector("#scrool-icon");
 
     links.forEach((element) => element.classList.toggle("dark-header"));
     titlecard.forEach((element) => element.classList.toggle("dark-header")); 
@@ -17,7 +18,8 @@ function ToDarkMode(){
     section2.classList.toggle("dark-header");
     section4.classList.toggle("dark-header");
     contacttitle.classList.replace("white-text"); 
-    niba.classList.toggle("test");
+    sdbr.classList.toggle("test");
+    btnscrool.classList.toggle("scrol-dark");
 }
 const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {
@@ -41,4 +43,9 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function redirect(){
+  window.location.href = "product.html";
+
 }
